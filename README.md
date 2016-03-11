@@ -17,7 +17,7 @@ This instruction assumes that the INPUT_PATH contains:
   - **Trayectories** — log of GPS timestamped coordinates 
   
 The trayectories produced by this script are associated to the user identified by the input parameter **USER_ID**. Computed trayectories conforms to the following schema (stored in JSON format):
-
+```
   User {
     id: string
     trayectories: [
@@ -33,7 +33,7 @@ The trayectories produced by this script are associated to the user identified b
     ]
     total: int  
   }
-
+```
 
 ## Extraction of user trayectories (all users)
 
@@ -54,7 +54,7 @@ The script assumes the existence of the file (and folder):
 
   out/part-r-00000
 
-The result is a file called "czml.json" which conforms to the CZML format used by CesiumJS. 
+The result is a file called “czml.json” which conforms to the CZML format used by CesiumJS. 
 
 
 

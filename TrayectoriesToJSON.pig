@@ -74,7 +74,7 @@ GPS_logs = FOREACH @ GENERATE
     latitude,
     longitude,
     altitude,
-    ToDate( CONCAT(date, ' ', time), 'yyyy-MM-dd HH:mm:ss', '-00:00') as timestamp
+    ToDate( CONCAT(date, ' ', time), 'yyyy-MM-dd HH:mm:ss', '+00:00') as timestamp
 ;
 
 

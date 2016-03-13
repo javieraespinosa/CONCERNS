@@ -139,7 +139,7 @@ Trayectories = FOREACH @ GENERATE
     endTime,
 
     ToDate( 
-        msToStr( MilliSecondsBetween(startTime, endTime) ), 'yyyy/MM/dd HH:mm:ss', '-00:00' 
+        msToStr( MilliSecondsBetween(startTime, endTime) ), 'yyyy/MM/dd HH:mm:ss', '+00:00' 
     ) as duration,
 
     points

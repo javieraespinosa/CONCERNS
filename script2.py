@@ -89,6 +89,12 @@ Trayectories = Trayectories.map(
 )
 
 
+Trayectories = Trayectories.map(
+        lambda x: {
+            "id": "XXX",
+            "trayectories": 
+        }
+)
 
 
 for l in Trayectories.take(1):
